@@ -1,0 +1,93 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+#content {
+  width: 100vw;
+  height: 100vh;
+}
+
+.title {
+  width: 100vw;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 20px;
+  color: rgb(30, 36, 108);
+  background-color: rgb(198, 229, 251);
+}
+
+.viewport {
+  width: 100vw;
+  /*display: -webkit-inline-box;*/
+}
+
+.tab_content {
+  width: 100vw;
+  height: calc(100vh - 100px);
+  background-color: rgb(244, 253, 255);
+  display: none;
+  overflow: scroll;
+}
+
+.current_tab_content {
+  width: 100vw;
+  height: calc(100vh - 100px);
+  background-color: rgb(244, 253, 255);
+  display: block;
+}
+
+.tab_nav {
+  width: 100vw;
+  height: 50px;
+  line-height: 50px;
+  background-color: rgb(198, 229, 251);
+  position: absolute;
+  top: calc(100vh - 50px);
+  text-align: center;
+  font-size: 0;
+}
+
+.tab {
+  width: 20vw;
+  background-color: #fff;
+  display: inline-block;
+  font-size: 3.5vw;
+  color: #888;
+}
+
+.current_tab {
+  background-color: rgb(215, 235, 249);
+  color: rgb(30, 36, 108);
+}
+
+.tab:hover {
+  background-color: rgb(215, 235, 249);
+  color: rgb(30, 36, 108);
+}
+
+ul {
+  margin-bottom: 3vh;
+}
+
+.review_card div {
+  width: 80vw;
+  height: 50vw;
+  outline: 1px solid black;
+  margin: 0 auto;
+}
+
+.ranking_card div {
+  width: 80vw;
+  height: 10vh;
+  outline: 1px solid black;
+  margin: 0 auto;
+}
+
+/*.ranking_item {
+  width: 80vw;
+  height: 15vw;
+  outline: 1px solid black;
+  margin: 2vh auto 0;
+}*/

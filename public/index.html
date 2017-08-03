@@ -4,7 +4,7 @@
 <title>파이어베이스 호스팅 테스트</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
@@ -13,12 +13,81 @@
       제목제목
     </div>
 
+    <div class="viewport">
+      <div class="tab_content current_tab_content" id="home_content">
+        <ul data-role="listview" data-theme="g">
+            <li class="review_card">
+              <div></div>
+            </li>
+            <li class="review_card">
+              <div></div>
+            </li>
+            <li class="review_card">
+              <div></div>
+            </li>
+            <li class="review_card">
+              <div></div>
+            </li>
+            <li class="review_card">
+              <div></div>
+            </li>
+        </ul>
+      </div>
+      <div class="tab_content" id="ranking_content">
+        <ul data-role="listview" data-theme="g">
+            <li class="ranking_card">
+              <div></div>
+            </li>
+            <li class="ranking_card">
+              <div></div>
+            </li>
+            <li class="ranking_card">
+              <div></div>
+            </li>
+            <li class="ranking_card">
+              <div></div>
+            </li>
+            <li class="ranking_card">
+              <div></div>
+            </li>
+            <li class="ranking_card">
+              <div></div>
+            </li>
+            <li class="ranking_card">
+              <div></div>
+            </li>
+            <li class="ranking_card">
+              <div></div>
+            </li>
+            <li class="ranking_card">
+              <div></div>
+            </li>
+            <li class="ranking_card">
+              <div></div>
+            </li>
+        </ul>
+      </div>
+      <div class="tab_content" id="review_content">
+
+
+      </div>
+      <div class="tab_content" id="tag_content">
+
+
+      </div>
+      <div class="tab_content" id="mypage_content">
+
+
+
+      </div>
+    </div>
+
     <nav class="tab_nav">
-        <div class="tab"></div>
-        <div class="tab"></div>
-        <div class="tab"></div>
-        <div class="tab"></div>
-        <div class="tab"></div>
+        <div class="tab current_tab" id="home_tab">홈</div>
+        <div class="tab" id="ranking_tab">랭킹</div>
+        <div class="tab" id="review_tab">글쓰기</div>
+        <div class="tab" id="tag_tab">태그</div>
+        <div class="tab" id="mypage_tab">마이페이지</div>
       </nav>
   </div>
 </body>
@@ -35,8 +104,6 @@
   };
   firebase.initializeApp(config);
 </script>
-<script type="text/javascript" src="index.js">
-
-</script>
-
+<script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="./js/index.js"></script>
 </html>
