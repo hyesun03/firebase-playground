@@ -1,16 +1,23 @@
 document.addEventListener("DOMContentLoaded", function(event) {
-  var box = document.getElementById('1st');
-  var flag = true;
+  var btn = document.getElementById("btn");
 
-  box.addEventListener("click", function() {
-    if(flag) {
-      this.style.transform = "rotate(360deg)";
-      flag = false;
-    }
-    else {
-      this.style.transform = "rotate(0deg)";
-      flag = true;
-    }
+  firebase.auth().createUserWithEmailAndPassword("chsun0303@naver.com", "hyesun0303").catch(function(error) {
+    // Handle Errors here.
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    // ...
+    console.log(errorCode);
+  });
+
+  btn.addEventListener("click", function() {
+    firebase.auth().signInWithEmailAndPassword("chsun0303@naver.com", "hyesun0303").catch(function(error) {
+      // Handle Errors here.
+      var errorCode = error.code;
+      var errorMessage = error.message;
+      // ...
+    });
+
+  console.log(firebase.auth().currentUser.email);
   });
 
 });
